@@ -8,7 +8,7 @@
                     <?php wp_nav_menu(array(
                         'theme_location'    => 'faq_menu',
                         'container'         => 'nav',
-                        'menu_class'        => 'menu',
+                        'menu_class'        => 'main_menu',
                         'container_class'   => 'main-navigation'   ,
                     )
                     );?> 

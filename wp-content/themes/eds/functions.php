@@ -60,9 +60,6 @@ add_action('wp_enqueue_scripts', 'eds_styles_scripts');
 
 function eds_styles_scripts()
 {
-    wp_register_style('eds-style', get_template_directory_uri().'/style.css',array(),"1.1");
-    wp_enqueue_style('eds-style');
-
   
     wp_register_style('eds-bootstrap', get_template_directory_uri().'/css/bootstrap/css/bootstrap.min.css');
     wp_enqueue_style('eds-bootstrap');
@@ -71,6 +68,12 @@ function eds_styles_scripts()
 
     wp_register_style("eds-jqueryui","http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css");
     wp_enqueue_style('eds-jqueryui');
+
+    wp_register_style('eds-style', get_template_directory_uri().'/style.css',array(),"1.1");
+    wp_enqueue_style('eds-style');
+
+    wp_register_style('nath', get_template_directory_uri().'/css/nath.css',array(),"1.1");
+    wp_enqueue_style('nath');
 
     if(is_page_template("template-faq.php"))
     {
