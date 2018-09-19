@@ -63,7 +63,7 @@ function eds_styles_scripts()
   
     wp_register_style('eds-bootstrap', get_template_directory_uri().'/css/bootstrap/css/bootstrap.min.css');
     wp_enqueue_style('eds-bootstrap');
-    wp_register_style("fontawesome",get_template_directory_uri()."/fonts/font-awesome.min.css");
+    wp_register_style("fontawesome","https://use.fontawesome.com/releases/v5.3.1/css/all.css");
     wp_enqueue_style('fontawesome');
 
     wp_register_style("eds-jqueryui","http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css");
@@ -74,6 +74,11 @@ function eds_styles_scripts()
 
     wp_register_style('nath', get_template_directory_uri().'/css/nath.css',array(),"1.1");
     wp_enqueue_style('nath');
+
+
+    wp_register_script('mobile', get_template_directory_uri().'/js/mobile.js', array('jquery',"jquery-ui-core","jquery-ui-accordion","jquery-ui-button"), "1.2");
+    wp_enqueue_script('mobile');
+
 
     if(is_page_template("template-faq.php"))
     {

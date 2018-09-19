@@ -88,7 +88,7 @@ body{
    display: inline-block; 
    padding-left: 2rem;
 }
-/*CSS AJOUTER SOUS-MENU FAQ*/
+/*CSS AJOUTER SOUS-MENU FAQ
 
 .sous-menu{
     display:none;
@@ -97,15 +97,15 @@ body{
 }
 .stricky-menu li:hover .sous-menu{
     display: inline-block;
-}
+}*/
 
 /*CSS AJOUTER SOUS-MENU FAQ*/
 .left ul:first-child{
     padding-left: 5rem;
 }
-.left ul:last-child{
+/* .left ul:last-child{
     padding-right: 5rem;
-}
+} */
 .main-menu a{
     color:#F02A2A;
 }

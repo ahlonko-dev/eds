@@ -14,4 +14,6 @@ jQuery(document).ready(function($){
             $("#accordion").accordion("option", "icons", icons);
         }
     });
+    
+
 });
