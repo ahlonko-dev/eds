@@ -13,6 +13,9 @@
      <?php do_action('after_body_open_tag');?>  
 
         
+        <body class="home">
+        <i class="mobile-icon fas fa-bars"></i>
+        
         <div class="header">
             <div class="container-fluid">
                 <div class="row navigator">
@@ -23,8 +26,6 @@
                     <div class="col-lg-5 col-md-5 col-sm-6 flex">
                         <div>
                             <img src="<?php echo get_template_directory_uri(); ?>/images/Groupe-36.png" alt=""/>
-
-                            
                         </div>
                         <div class="savoir">
                             <div>
@@ -40,20 +41,18 @@
                     </div>
                 </div>
             </div>
-        </div> 
-        <nav class="nav-barre">
+        </div>
         <div class="container">
-                <div class="col-12 menu">
+                <div class="col-12 ">
                     <div class="left">
+                        <div class="main-menu">
+                            
+                        
                     <?php wp_nav_menu(array(
-                        'theme_location'    => 'header_menu',
-                        'container'         => 'nav',
-                        'menu_class'        => 'menu',
-                        'container_class'   => 'main-navigation'   ,
+                        'theme_location'    => 'header_menu'
                     )
                     );?>  
-                    </nav>
-					
+					</div>
                     </div>
                 </div>
             </div>

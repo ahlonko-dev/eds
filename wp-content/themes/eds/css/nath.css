@@ -71,6 +71,7 @@ body{
     padding-right: 0px;
 
 }
+
 .main-menu{
     display: flex;
     justify-content: flex-end;
@@ -89,15 +90,14 @@ body{
    padding-left: 2rem;
 }
 /*CSS AJOUTER SOUS-MENU FAQ*/
-
-.sous-menu{
+/*.sub-menu{
     display:none;
     position: absolute;
     
 }
-.stricky-menu li:hover .sous-menu{
+.stricky-menu li:hover .sub-menu{
     display: inline-block;
-}
+}*/
 
 /*CSS AJOUTER SOUS-MENU FAQ*/
 .left ul:first-child{
