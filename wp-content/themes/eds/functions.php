@@ -72,8 +72,9 @@ function eds_styles_scripts()
     wp_register_style('eds-style', get_template_directory_uri().'/style.css',array(),"1.1");
     wp_enqueue_style('eds-style');
 
-    wp_register_style('nath', get_template_directory_uri().'/css/nath.css',array(),"1.1");
+    /*wp_register_style('nath', get_template_directory_uri().'/css/nath.css',array(),"1.1");
     wp_enqueue_style('nath');
+    */
 
 
     wp_register_script('mobile', get_template_directory_uri().'/js/mobile.js', array('jquery',"jquery-ui-core","jquery-ui-accordion","jquery-ui-button"), "1.2");

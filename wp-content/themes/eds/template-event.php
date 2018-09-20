@@ -30,8 +30,6 @@ catch (Exception $e)
     die('Erreur : ' . $e->getMessage());
 }
 ?>
-<?php while (have_posts()) : the_post();?>
-
 
 <div>
 <h2><?php echo $event["name"] ?></h2>
@@ -40,5 +38,8 @@ au <?php echo $event["end_date"]; ?> à <?php echo $event["end_time"]; ?></p>
 <p><?php echo $event["description"] ?></p>
 </div>
 
- <?php endwhile;?>
+
+
+
+
 <?php get_footer();?>
