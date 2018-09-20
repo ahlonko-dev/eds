@@ -47,7 +47,6 @@
                     <div class="left">
                         <div class="main-menu">
                             
-                        
                     <?php wp_nav_menu(array(
                         'theme_location'    => 'header_menu'
                     )
@@ -57,5 +56,5 @@
                 </div>
             </div>
             <div class="mobile-menu"></div>
-				</div>
+				
             </header> <!-- .site-header -->

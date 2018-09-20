@@ -12,7 +12,7 @@ Template Name: Contact
 			<main class="main-content">
 				<div class="fullwidth-block inner-content">
 					<div class="container">
-						<h2 class="page-title"><?php _e("Contact Us","spritz");?></h2>
+						<h2 class="page-title"><?php _e("Contact Us","eds");?></h2>
 						<div class="row">
 							<div class="col-md-6">
 

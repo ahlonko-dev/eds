@@ -123,7 +123,7 @@ Template Name: Presentation
         </div>
     </div> <!-- end container -->
    
-<!-- end contenu de la page Presentation -->
+</div><!-- end contenu de la page Presentation -->
 
 <?php endwhile;?>
 <?php get_footer()?>
