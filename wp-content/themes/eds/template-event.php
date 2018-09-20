@@ -31,13 +31,23 @@ catch (Exception $e)
 }
 ?>
 
-<div>
-<h2><?php echo $event["name"] ?></h2>
-<p>du <?php echo $event["start_date"]; ?> à <?php echo $event["start_time"]; ?><br/>
-au <?php echo $event["end_date"]; ?> à <?php echo $event["end_time"]; ?></p>
-<p><?php echo $event["description"] ?></p>
-</div>
-
+<main class="main-content">
+				<div class="fullwidth-block inner-content">
+					<div class="container">
+                    <h1><?php the_title();?></h1>	
+                    <div>
+						<div class="row">
+							<div class="col-md-6">
+                            <h2><?php echo $event["name"] ?></h2>
+                                    <p>du <?php echo $event["start_date"]; ?> à <?php echo $event["start_time"]; ?><br/>
+                                            au <?php echo $event["end_date"]; ?> à <?php echo $event["end_time"]; ?></p>
+                                    <p><?php echo $event["description"] ?></p>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+</main>
 
 
 
