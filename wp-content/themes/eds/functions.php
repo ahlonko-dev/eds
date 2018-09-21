@@ -11,7 +11,7 @@ function on_eds_init()
 }
 
 
-register_taxonomy( 'media_category' , 'attachment', $args );
+//register_taxonomy( 'media_category' , 'attachment', $args );
 	/* ce if pour rajouter la partie option de page*/ 
 	if( function_exists('acf_add_options_page') ) {
 
@@ -74,6 +74,7 @@ function eds_styles_scripts()
 
     /*wp_register_style('nath', get_template_directory_uri().'/css/nath.css',array(),"1.1");
     wp_enqueue_style('nath');
+
     */
 
 

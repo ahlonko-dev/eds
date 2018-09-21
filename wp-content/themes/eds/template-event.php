@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Event Description
+Template Name: Event Description-
 */
 ?>
 <?php
@@ -11,6 +11,8 @@ get_header();
 $current_page = sanitize_post( $GLOBALS['wp_the_query']->get_queried_object() );
 // Get the page slug
 $slug = $current_page->post_name;
+//$slug = "sceance-douverture";
+//var_dump($slug);
 
 $event=array();
 $db_event;
@@ -18,6 +20,7 @@ try
 {
     $bdd = new PDO('mysql:host=localhost;dbname=eds;charset=utf8', 'root', '');
     $db_event=$bdd->query("SELECT * FROM wp_em_events as events WHERE events.event_slug = '$slug'")->fetch();
+    //var_dump($db_event);
     $event["name"]=$db_event["event_name"];
     $event["start_date"]=$db_event["event_start_date"];
     $event["start_time"]=$db_event["event_start_time"];

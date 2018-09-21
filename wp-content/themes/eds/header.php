@@ -9,7 +9,7 @@
 	</head>
     
      <!--début header-->
-     <body  <?php body_class($class); ?>>
+     <body  <?php body_class(); ?>>
      <?php do_action('after_body_open_tag');?>  
 
         
