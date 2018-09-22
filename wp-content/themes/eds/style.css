@@ -150,7 +150,7 @@ footer .sirius {
 /*FIN FOOTER CSS*/
 
 
-*VERSION MOBILE*/
+/*VERSION MOBILE*/
 
 @media only screen and (max-width:770px){
  .mobile-icon{
@@ -204,6 +204,10 @@ footer .sirius {
         margin: 0;
         border: none;
         border-radius:0;
+     
+    }
+    ul{
+        padding-right: 19rem;
     }
     
     .container-fluid .navigator{
@@ -243,7 +247,7 @@ footer .sirius {
     width: 100%;
     text-align: left;
     background-color: #EBEBEB;
-    line-height: 7rem;
+    line-height: 0rem;
     
 }
     footer .sirius {
@@ -255,4 +259,6 @@ footer .sirius {
         text-align: center;
     }
 }
+
+
 
