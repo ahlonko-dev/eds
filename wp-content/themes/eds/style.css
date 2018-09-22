@@ -113,6 +113,33 @@ body{
     float: right;
 }
 
+/*CSS DU CONTENUE PARAGRAPHE*/
+.description{
+    margin-bottom: 10rem;
+}
+.description h1{
+   text-align: center;
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+   font-family: miso-bold;
+   color: #F02A2A;
+}
+.description flotte{
+   margin-top: 15px;
+   margin-bottom: 0rem;
+   padding-right: 5rem;
+}
+.description p{
+   margin-top:2rem;
+   padding: 0 1.5rem;
+}
+.prologue img{
+   height: 30rem;
+   width: 34rem;
+   padding-left: 9rem;
+
+}
+/*FIN CSS DU CONTENUE PARAGRAPHE*/
 
 
 /*BEBUT FOOTER*/
