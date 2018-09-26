@@ -11,7 +11,13 @@
 						
 						<div class="row">
 							<div class="col-md-6">
-                            <?php the_content();?>
+                            <?php 
+                            include("dba/GetEventList.php");
+                            $events=getEventList(10);
+                            foreach($events as $event){
+                                //code html
+                            }
+                            ?>
                         </div>
                     </div>
                 </div>
