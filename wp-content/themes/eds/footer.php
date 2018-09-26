@@ -13,7 +13,7 @@
                         
                         <li class="<?php the_sub_field("nom") ?>">
                             <a href="<?php the_sub_field('adress_link')?>" target="_blank">
-                                <img src="<?php echo get_sub_field("image")["sizes"]["large"];?>" alt="" />
+                                <img src="<?php echo get_sub_field("image")["sizes"]["medium"];?>" alt="" />
                             </a>
                         </li>
                         <?php

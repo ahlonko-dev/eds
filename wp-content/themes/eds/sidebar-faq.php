@@ -1,8 +1,8 @@
-<div class="col-lg-3 col-sm-12">
+<div class="col-lg-4 col-sm-12">
                 <div>
                     <!--Début ul-->
                     <div class="Title">
-                        <h1>Catégories de question</h1>
+                        <h1>Catégories de questions</h1>
                     </div>
 
                     <?php wp_nav_menu(array(

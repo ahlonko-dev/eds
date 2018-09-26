@@ -6,11 +6,11 @@ body{
 }
 @font-face {
     font-family: miso-bold;
-    src: url(../police/miso/miso-bold.ttf);
+    src: url(./police/miso/miso-bold.ttf);
 }
 @font-face {
     font-family: miso-regular;
-    src: url(../police/miso/miso-regular.ttf);
+    src: url(./police/miso/miso-regular.ttf);
 }
 [class^="col-"], [class*=" col-"], .row{
     padding: 0;
@@ -19,17 +19,17 @@ body{
 .header{
     background-color:#F02A2A;
     color: #ffffff;
-    padding:5px;
+   height:220px;/*change*/
 }
 .mobile-icon{
     display: none;
 }
 .container-fluid .navigator{
-    font-size:1.5rem;
+    font-size:rem;/*change*/
     padding-left:5rem;
 }
 .container-fluid .navigator .ecole-solidaire{
-    padding-top:2rem;
+    padding-top:0;
 }
 .container-fluid .navigator .para1{
     border-bottom: 1px solid #FFFFFF; 
@@ -37,16 +37,17 @@ body{
     display: inline-block;
     padding-bottom:0rem;
     font-family: miso-bold;
-    font-size: 3.9rem;
+    font-size: 5.9rem;
 
 }
 .container-fluid .navigator .para2{
     padding-bottom:1rem;
-    font-size: 2.4rem;
+    font-size: 3.6rem;
     font-family:miso-regular;
+    margin-bottom:0;
 }
 .container-fluid img{
-    height:15rem;
+    height:12rem;/*change*/
     padding-left: 6rem;
     padding: 0;
 }
@@ -54,11 +55,18 @@ body{
     display: flex;
 }
 .flex .savoir{
-    padding:3rem;
     padding-right: 0;
-    font-family: miso-bold;
-    font-size:2rem;
+    font-family: miso-regular;
+    font-size:4.3rem;
     padding-bottom:0;
+    line-height: 1.2;
+    font-size: 3.9rem;
+
+}
+
+.flex .savoir p{
+    margin-bottom:-18px; /*change*/
+    
 }
 
 .container-fluid .pouvoir{
@@ -89,6 +97,23 @@ body{
    display: inline-block; 
    padding-left: 2rem;
 }
+
+/*Mise en page contenu FAq*/
+.cont{
+    
+} 
+.ques{
+    padding-top: 4rem;
+    padding-right: 0;
+}
+.res{
+    padding-top:9rem;
+    padding-left: 7rem;
+}
+
+/**/
+
+
 /*CSS AJOUTER SOUS-MENU FAQ*/
 /*.sub-menu{
     display:none;
@@ -114,33 +139,43 @@ body{
 }
 
 /*CSS DU CONTENUE PARAGRAPHE*/
-.description{
-    margin-bottom: 10rem;
-}
-.description h1{
-   text-align: center;
-   padding-top: 2rem;
-   padding-bottom: 2rem;
-   font-family: miso-bold;
-   color: #F02A2A;
-}
-.description flotte{
-   margin-top: 15px;
-   margin-bottom: 0rem;
-   padding-right: 5rem;
-}
-.description p{
-   margin-top:2rem;
-   padding: 0 1.5rem;
-}
-.prologue img{
-   height: 30rem;
-   width: 34rem;
-   padding-left: 9rem;
 
+p{
+    text-align: justify;  
+        padding-left: 2rem;
+        padding-right: 2rem;
+}
+h1{
+    font-style: normal;
+    font-size: auto;
+    font-family:miso-bold;
+    margin-top: 2rem;
+    text-align: center;
+    color:#F02A2A;
+    padding-top: 3rem;
+}
+.description {
+    margin: 2rem 0;
+}
+.description-image {
+    width: 23rem;
+    height: 30rem;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-left: 2rem; 
+}
+.last-para{
+    margin-bottom: 9rem;
 }
 /*FIN CSS DU CONTENUE PARAGRAPHE*/
 
+/**
+DEBUG footer formulaire reservation et main-navigation
+*/
+.em-booking-form-details,.main-navigation,.css-events-list{
+    margin-bottom:200px;
+}
 
 /*BEBUT FOOTER*/
 
@@ -245,22 +280,22 @@ footer .sirius {
     .container-fluid .navigator .ecole-solidaire{
         padding-top:0;
     }
+    /*
     .container-fluid .navigator .para1{
         border-bottom: 1px solid #FFFFFF; 
         color: #FFF121;
-        display: inline-block;
+        display: inline;
         padding-bottom:0rem;
        font-family:miso-bold;
-       font-size: 1.8rem;
-
+       font-size: 5.9rem;
     }
     .container-fluid .navigator .para2{
         padding-bottom:1rem;
-        font-size:1.1rem;
         font-family:miso-regular;
-        font-size: 1.3rem;
+        font-size: 3.6rem;
       
     }
+    */
     .container-fluid img{
         height:8rem;
     }

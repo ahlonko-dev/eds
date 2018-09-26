@@ -11,14 +11,16 @@ Template Name: FAQ
 
 
 <div class="container">
+    <div class="cont">
         <!--Contenu FAQ avec liens ul sous forme de barre de menu latéral qui renvoit à chacune des pages respectives-->
         <div class="row">
             <!--Row barre de menu-->
-            <div class="col-lg-6 col-sm-12">
+            <div class="col-lg-4 col-md-4 col-sm-12 ques">
+                
                 <?php get_sidebar("faq"); ?>
             </div>
 
-            <div class="col-lg-6 col-sm-12">
+            <div class="col-lg-8 col-md-8 col-sm-12 res">
                 <!--Contenu de la page commence ici-->
                 <h2><?php the_title();?></h2>
                 <div class="contenu-accordeon">
@@ -46,6 +48,7 @@ Template Name: FAQ
 
 
         </div><!--Fin row numero -->
+                        </div><!--class cont-->
     </div>
     <!--Fin container Contenu FAQ-->
 

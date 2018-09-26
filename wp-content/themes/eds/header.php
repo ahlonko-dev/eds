@@ -23,13 +23,17 @@
                         <P class="para1">L'ECOLE  DES  SOLIDARITÉS</p>  
                         <p class="para2"> SANS-PAPIERS MAIS PAS SANS DROITS!</p>
                     </div>
-                    <div class="col-lg-5 col-md-5 col-sm-6 flex">
-                        <div>
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/Groupe-36.png" alt=""/>
-                        </div>
+                    <div class="col-lg-2 col-md-2">
+
+                    </div>
+                    <div class="col-lg-1 col-md-1 col-sm-2">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/Groupe-36.png" alt=""/>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-4 flex">
+                        
                         <div class="savoir">
                             <div>
-                                <p>SAVOIR,</p>
+                                <p>SAVOIR</p>
                             </div>
                             <div>
                                 <p>C'EST</p>
