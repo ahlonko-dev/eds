@@ -5,7 +5,7 @@ Template Name: Event Description-
 ?>
 <?php
 get_header();
-
+//die();
 
 // Get the queried object and sanitize it
 $current_page = sanitize_post( $GLOBALS['wp_the_query']->get_queried_object() );

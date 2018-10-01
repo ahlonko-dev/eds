@@ -7,6 +7,7 @@
                 *Include the post -Format-spectic template for the content
                 *if you want to averride this in a child theme, then include a file
                 *called content-___php (where___ is the post Fprmatname) and that will be used instead               */
+               // echo "gggggggggggggggggggggggggggggggg";
             get_template_part('template-parts/content', get_post_format());  
                 // End the loop
             endwhile;

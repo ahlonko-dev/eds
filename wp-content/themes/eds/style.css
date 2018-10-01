@@ -1,8 +1,13 @@
-/*HEADER*/
-/*Version PC*/
 body{
-    height:100%;
-    font-size: 15px;
+    background: url(./images/hands.jpg) no-repeat center fixed;
+    font-size:15px;
+    background-size:100%,cover;
+    width: 100%;
+    height:100vh;
+    margin: 0;
+    padding: 0;
+      
+    
 }
 @font-face {
     font-family: miso-bold;
@@ -12,24 +17,63 @@ body{
     font-family: miso-regular;
     src: url(./police/miso/miso-regular.ttf);
 }
+
 [class^="col-"], [class*=" col-"], .row{
     padding: 0;
     margin: 0;
 }
-.header{
-    background-color:#F02A2A;
-    color: #ffffff;
-   height:220px;/*change*/
+
+.left{
+      padding: 0;
 }
-.mobile-icon{
+.main-menu{
+    display: flex;
+    justify-content: flex-end;
+     background-color:white;
+     margin:0;
+     padding-right: 11rem;
+     position: fixed;
+     width: 100%;
+     z-index:9999;
+      
+     
+}
+.main-menu ul{
+    list-style: none;
+    padding:1rem;
+    margin: 0;
+   
+   
+
+}
+.main-menu li{
+   display: inline-block; 
+   padding-left: 5rem;
+}
+.main-menu a{
+    color:#F02A2A;
+   
+}
+
+.mobile-icon {
     display: none;
 }
+.container-fluid{
+     background-color:#F02A2A;
+    color: #ffffff;
+   padding:0;
+}
 .container-fluid .navigator{
-    font-size:rem;/*change*/
+    
     padding-left:5rem;
+    padding: 0;
+}
+.navigator{
+   text-align: center;
 }
 .container-fluid .navigator .ecole-solidaire{
-    padding-top:0;
+    padding-top:1rem;
+    margin-top: 2rem;
 }
 .container-fluid .navigator .para1{
     border-bottom: 1px solid #FFFFFF; 
@@ -37,153 +81,66 @@ body{
     display: inline-block;
     padding-bottom:0rem;
     font-family: miso-bold;
-    font-size: 5.9rem;
+    font-size: 3.7rem;
 
 }
 .container-fluid .navigator .para2{
     padding-bottom:1rem;
-    font-size: 3.6rem;
+    font-size:2.4rem;
     font-family:miso-regular;
-    margin-bottom:0;
+    margin-left:0.5rem;
 }
 .container-fluid img{
-    height:12rem;/*change*/
+    height:12rem;
     padding-left: 6rem;
     padding: 0;
+    padding-top:1rem;
+    margin-left: 5rem;
+    margin-right: -4rem;
+    margin-top: 2.6rem;   
+}
+.container-fluid .pouvoir{
+    color: #FFF121;
+}
+.ecole-solidaire{
+    padding-left:5rem;
 }
 .flex{
     display: flex;
 }
 .flex .savoir{
-    padding-right: 0;
+
     font-family: miso-regular;
-    font-size:4.3rem;
+    font-size:3.2rem;
     padding-bottom:0;
-    line-height: 1.2;
-    font-size: 3.9rem;
-
+    padding-top: 3.5rem;
+    margin-left:  5rem;
+    line-height: 3rem;
 }
-
-.flex .savoir p{
-    margin-bottom:-18px; /*change*/
-    
+.intro{
+    background-color: #EBEBEB;
+    padding-bottom: 1rem;
+   
+   
 }
-
-.container-fluid .pouvoir{
-    color: #FFF121;
+.intro h2{
+    padding: 15.5rem;
+    color: #F02A2A;
+    padding-bottom:1rem;
+    padding-top: 2rem;
+    font-family: miso-bold;
+    text-transform: uppercase;
 }
-.container{
-
-    width:100%;
-    margin-right: 0px;
-    padding-right: 0px;
-
+.intro p{
+    font-family: verdana;
+    padding: 0px 15.5rem;
 }
-
-.main-menu{
-    display: flex;
-    justify-content: flex-end;
-}
-.main-menu ul{
-    list-style: none;
-    padding:1rem;
-    margin: 0;
-    background-color:#EBEBEB;
-    border: 0px solid;
-    border-radius:0 0 0 5rem;
-
-}
-.main-menu li{
-   display: inline-block; 
-   padding-left: 2rem;
-}
-
-/*Mise en page contenu FAq*/
-.cont{
-    
-} 
-.ques{
-    padding-top: 4rem;
-    padding-right: 0;
-}
-.res{
-    padding-top:9rem;
-    padding-left: 7rem;
-}
-
-/**/
-
-
-/*CSS AJOUTER SOUS-MENU FAQ*/
-/*.sub-menu{
-    display:none;
-    position: absolute;
-    
-}
-.stricky-menu li:hover .sub-menu{
-    display: inline-block;
-}*/
-
-/*CSS AJOUTER SOUS-MENU FAQ*/
-.left ul:first-child{
-    padding-left: 5rem;
-}
-/* .left ul:last-child{
-    padding-right: 5rem;
-} */
-.main-menu a{
-    color:#F02A2A;
-}
-.left{
-    float: right;
-}
-
-/*CSS DU CONTENUE PARAGRAPHE*/
-
-p{
-    text-align: justify;  
-        padding-left: 2rem;
-        padding-right: 2rem;
-}
-h1{
-    font-style: normal;
-    font-size: auto;
-    font-family:miso-bold;
-    margin-top: 2rem;
-    text-align: center;
-    color:#F02A2A;
-    padding-top: 3rem;
-}
-.description {
-    margin: 2rem 0;
-}
-.description-image {
-    width: 23rem;
-    height: 30rem;
-    float: left;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    padding-left: 2rem; 
-}
-.last-para{
-    margin-bottom: 9rem;
-}
-/*FIN CSS DU CONTENUE PARAGRAPHE*/
-
-/**
-DEBUG footer formulaire reservation et main-navigation
-*/
-.em-booking-form-details,.main-navigation,.css-events-list{
-    margin-bottom:200px;
-}
-
-/*BEBUT FOOTER*/
 
 footer {
     width: 100%;
     text-align: left;
     background-color: #EBEBEB;
-    line-height: 7rem;
+    line-height:7rem;
     bottom: 0;
     position:fixed;
 }
@@ -199,8 +156,8 @@ footer ul li {
 }
 footer ul li img {
     height: auto;
-    width: 4.5rem;
-    margin: 0 0.4rem;
+    width: 6.5rem;
+    margin: 0 0.5rem;
     display: inline-block;
 }
 footer .sirius {
@@ -208,14 +165,126 @@ footer .sirius {
     width: 4.5rem;
     margin: 0 4rem;
     float: right;
+}/*CSS DU CONTENUE ACCUEIL*/
+.container{
+    margin-top: 5rem;
 }
-/*FIN FOOTER CSS*/
+.container .event{
+    background-color:rgba(255, 255, 255, 0.75);
+    height: 23.5rem;
+}
+.container .tittle{
+        padding: 1rem;
+}
+.container .description-image img{
+    height: auto;
+    width:  31rem;
+    margin-top:-2rem;
+margin-left:-2rem;       
+}
+.container p{
+    text-align: justify;  
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
 
+.description-image {
+    width: 23rem;
+    height: 30rem;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 2rem;
+    padding-left: 2rem;
+}
+.container .inscription-button{
+    display: inline-block;
+    text-align: center;
+    color:#FFFFFF;
+    background-color: #F02A2A;
+    font-weight: 900;
+    padding: 0.5rem 0.7rem;
+    text-transform: uppercase;
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+}
+
+/*FIN CSS DU CONTENUE ACCUEIL**/
+
+/*CSS DU CONTENUE PARAGRAPHE*/
+.container .presentation{
+    background-color:rgba(255, 255, 255, 0.75);
+    padding: 2rem ;
+}
+
+h1{
+    font-style: normal;
+    font-family:miso-bold;
+    margin-top: 2rem;
+    text-align: center;
+    
+   
+}
+.description {
+    margin: 2rem 0;
+}
+.description-img {
+    width: 23rem;
+    height:34rem;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-left: 2rem;
+    margin-top: 2rem;
+
+
+}
+.last-para{
+    margin-bottom: 9rem;
+}
+/*FIN CSS DU CONTENU PARAGRAPHE*/
 
 /*VERSION MOBILE*/
-
 @media only screen and (max-width:770px){
- .mobile-icon{
+    body{
+
+    font-size:15px;
+    overflow-x:hidden;
+    background: url(../IMAGE/9061673.png)no-repeat center top fixed;
+    background-size:50rem 50rem,cover;
+    width: 100%;
+    height:100%;
+}
+    .main-menu{
+     top: 10%;
+     left: 13%;
+     z-index: 1000;
+     position: fixed;
+     display: none;
+     background-color:#EBEBEB;
+     
+    }
+
+    .main-menu li{
+        display:block;
+        padding-left:0;
+    }
+    .main-menu  a{
+        color:#F02A2A;
+        padding:  0.3rem;
+        margin-right: 8rem;
+        display: block;
+
+    }
+    .main-menu a:hover{
+        
+        background-color:#FFF121;
+        text-decoration: none;
+        margin-right: 8rem;
+        padding-right: 17rem; 
+
+    }
+    .mobile-icon{
         font-size:2rem;
         display: inline-block;
         color: black;
@@ -225,86 +294,34 @@ footer .sirius {
         z-index: 1000;
 
     }
-   
-    .main-menu{
-     top: 10%;
-     left: 13%;
-     z-index: 1000;
-     position: fixed;
-     display: none;
-     background-color:#EBEBEB;
-    }
-    .main-menu .stricky-menu{
-       background-color: #EBEBEB; 
-    }
-    .main-menu li{
-        display:block;
-        padding-left:0;
-    }
-    .main-menu  a{
-        color:#F02A2A;
-        padding: 0.5rem 1rem;
-        display: block;
-    }
-    .main-menu a:hover{
-        color:#F02A2A;
-        background-color:#FFF121;
-        text-decoration: none;
-    }
-    .left{
-        float:none;
-    }
-     .left ul:first-child{
-        padding-left:0;
-    }
-    .left ul:last-child{
-        padding-left: 0;
-    }
-   
-    .main-menu ul{
-        padding: 0;
-        margin: 0;
-        border: none;
-        border-radius:0;
-     
-    }
-    ul{
-        padding-right: 19rem;
-    }
-    
-    .container-fluid .navigator{
-        font-size:1rem;
-        padding-left:4rem;
-    }
-   
-    .container-fluid .navigator .ecole-solidaire{
-        padding-top:0;
-    }
-    /*
     .container-fluid .navigator .para1{
-        border-bottom: 1px solid #FFFFFF; 
+        border-bottom:3px solid #FFFFFF; 
         color: #FFF121;
-        display: inline;
+        display: inline-block;
         padding-bottom:0rem;
-       font-family:miso-bold;
-       font-size: 5.9rem;
+        font-family: miso-bold;
+        font-size: 2.4rem;/*CHANGEMENT*/
+
     }
     .container-fluid .navigator .para2{
-        padding-bottom:1rem;
+        padding-bottom:0;
+        font-size: 1.6rem;
         font-family:miso-regular;
-        font-size: 3.6rem;
-      
     }
-    */
     .container-fluid img{
-        height:8rem;
+        height: 9rem;
+        padding-left: 6rem;
+
     }
-    .flex .savoir{
-        padding: 1rem;
-        padding-right: 0;
-        font-family: miso-bold;
-        font-size:1rem;
-    }
+   .flex .savoir{
+
+    font-family: miso-regular;
+    font-size:2.2rem;
+    padding-bottom:0;
+    padding-top: 1rem;
+    margin-left:  5rem;
+    line-height: 2rem;
+}
     footer {
     width: 100%;
     text-align: left;
