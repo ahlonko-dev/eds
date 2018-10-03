@@ -31,7 +31,7 @@ body{
     justify-content: flex-end;
      background-color:white;
      margin:0;
-     padding-right: 11rem;
+     padding-right: 10rem;
      position: fixed;
      width: 100%;
      z-index:9999;
@@ -52,8 +52,9 @@ body{
 }
 .main-menu a{
     color:#F02A2A;
-   
+    font-size: 1.4rem;
 }
+
 
 .mobile-icon {
     display: none;
@@ -73,7 +74,7 @@ body{
 }
 .container-fluid .navigator .ecole-solidaire{
     padding-top:1rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 .container-fluid .navigator .para1{
     border-bottom: 1px solid #FFFFFF; 
@@ -97,13 +98,16 @@ body{
     padding-top:1rem;
     margin-left: 5rem;
     margin-right: -4rem;
-    margin-top: 2.6rem;   
+    margin-top: 3.3rem;   
 }
 .container-fluid .pouvoir{
     color: #FFF121;
 }
 .ecole-solidaire{
     padding-left:5rem;
+}
+.event a{
+    color: #F02A2A;
 }
 .flex{
     display: flex;
@@ -113,7 +117,7 @@ body{
     font-family: miso-regular;
     font-size:3.2rem;
     padding-bottom:0;
-    padding-top: 3.5rem;
+    padding-top: 3.8rem;
     margin-left:  5rem;
     line-height: 3rem;
 }
@@ -186,6 +190,7 @@ margin-left:-2rem;
     text-align: justify;  
     padding-left: 2rem;
     padding-right: 2rem;
+    font-size: 1.1rem;
 }
 
 .description-image {

@@ -26,7 +26,7 @@
                             ?>
                                 <div class="row">
                                     <div class="col-lg-7 col-md-7 col-sm-6 event">
-                                        <h2 class="tittle"><a href="<?php echo get_the_permalink($post_id) ?>"><?php echo $event["event_name"]; ?></a></h2>
+                                        <h2 class="tittle"><?php echo $event["event_name"]; ?></h2>
                                         <p> <img src="/eds/wp-content/themes/eds/images/Group-49.png" alt=""/><?php echo get_the_date('d/m/Y h:i', $post_id);?></p>
                                         <p> 
                                             <img src="/eds/wp-content/themes/eds/images/Group-48.png" alt=""/>
