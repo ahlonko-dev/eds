@@ -5,4 +5,10 @@ jQuery(document).ready(function($){
         $(".para1").css("left");
         
     });
+    $(".main-menu a").hover(function () {
+        $("this").css('background-color','#F02A2A;');
+        $("this").css('padding','1.2rem');
+        $("this").css('color','#FFFFFF;');
+        
+    });
 });

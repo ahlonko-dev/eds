@@ -54,6 +54,11 @@ body{
     color:#F02A2A;
     font-size: 1.4rem;
 }
+.main-menu a:hover, .main-menu .current-menu-item a{
+    background-color: #F02A2A;
+    color: #FFFFFF;
+    padding: 1.2rem;
+}
 
 
 
@@ -228,14 +233,9 @@ h1{
     font-family:miso-bold;
     margin-top: 2rem;
     text-align: center;
-    color:black;
+    color:white;
  }
-h2{
-    font-style: normal;
-    font-family:miso-bold;
-    margin-top: 2rem;
-    color: white; 
-}
+
 
 .description {
     margin: 2rem 0;
@@ -298,9 +298,29 @@ form .submit:hover{
     padding-left: 19rem;
 }
 .ui-state-active{
-    background-color: red;
+    background-color:#F02A2A;
 }
 /*FIN CSS DU CONTENU CONTACT*/
+/* BEDUT CSS DU CONTENU FAQ*/
+.res h2{
+    color:#F02A2A;
+    padding-bottom:2rem;
+}
+
+.ques .menu-item a{
+    color: black;
+     text-decoration: none;
+
+}
+.ques h1{
+    margin-top: 0rem;
+    color:#F02A2A;
+}
+.faq-border{
+    background-color: rgba(255, 255, 255, 0.75);
+    padding-bottom: 8rem
+}
+/* FIN CSS DU CONTENU FAQ*/
 
 /*VERSION MOBILE*/
 @media only screen and (max-width:770px){

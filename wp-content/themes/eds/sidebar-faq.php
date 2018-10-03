@@ -2,7 +2,7 @@
                 <div>
                     <!--Début ul-->
                     <div class="Title">
-                        <h1>Catégories de questions</h1>
+                        <h1>Catégories de questionnaires</h1>
                     </div>
 
                     <?php wp_nav_menu(array(
