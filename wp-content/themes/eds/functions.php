@@ -90,7 +90,7 @@ function eds_styles_scripts()
 
     if(is_page_template("template-faq.php"))
     {
-        wp_register_script('eds-accordion', get_template_directory_uri().'/js/new.js', array('jquery',"jquery-ui-core","jquery-ui-accordion","jquery-ui-button"), "1.2");
+        wp_register_script('eds-accordion', get_template_directory_uri().'/js/new.js', array('jquery',"jquery-ui-core","jquery-ui-accordion","jquery-ui-button"), "1.3");
         wp_enqueue_script('eds-accordion');
     }
 

@@ -5,7 +5,8 @@ jQuery(document).ready(function($){
         activeHeader: "ui-icon-circle-arrow-s"
     };
     $("#accordion").accordion({
-        icons: icons
+        icons: icons, heightStyle: "content" 
+
     });
     $("#toggle").button().on("click", function () {
         if ($("#accordion").accordion("option", "icons")) {
@@ -14,6 +15,7 @@ jQuery(document).ready(function($){
             $("#accordion").accordion("option", "icons", icons);
         }
     });
-    
-
+   /*  $('#accordion').accordion({
+        heightstyle: "content"
+    }); */
 });
