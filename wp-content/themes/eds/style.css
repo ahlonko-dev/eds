@@ -53,6 +53,7 @@ body{
 .main-menu a{
     color:#F02A2A;
     font-size: 1.4rem;
+    text-decoration: none;
 }
 .main-menu a:hover, .main-menu .current-menu-item a{
     background-color: #F02A2A;
@@ -352,6 +353,7 @@ form .submit:hover{
         padding:  0.3rem;
         margin-right: 8rem;
         display: block;
+        text-decoration: none;
 
     }
     .main-menu a:hover{
