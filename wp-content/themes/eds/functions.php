@@ -67,10 +67,6 @@ function eds_styles_scripts()
     wp_register_style("fontawesome","https://use.fontawesome.com/releases/v5.3.1/css/all.css");
     wp_enqueue_style('fontawesome');
     
-    /*
-    wp_register_style("fontgoogle","http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900");
-    wp_enqueue_style('fontgoogle');
-    */
 
     wp_register_style("eds-jqueryui","http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css");
     wp_enqueue_style('eds-jqueryui');
@@ -78,10 +74,6 @@ function eds_styles_scripts()
     wp_register_style('eds-style', get_template_directory_uri() . '/style.css',array(),"1.3");
     wp_enqueue_style('eds-style');
 
-    /*wp_register_style('nath', get_template_directory_uri().'/css/nath.css',array(),"1.1");
-    wp_enqueue_style('nath');
-
-    */
 
 
     wp_register_script('mobile', get_template_directory_uri().'/js/mobile.js', array('jquery',"jquery-ui-core","jquery-ui-accordion","jquery-ui-button"), "1.3");
@@ -95,33 +87,7 @@ function eds_styles_scripts()
     }
 
 
-    /*
-    if(is_page_template("template-presentation.php"))
-    {
-        wp_register_style('eds-description', get_template_directory_uri().'/style.css',array(),"1.1");
-        wp_enqueue_script('eds-style');
-    }
-    */
-   
-
-    /*
-    wp_register_script('eds-plugins', get_template_directory_uri().'/js/plugins.js', array('jquery'), "1.1");
-    wp_register_script('eds-app', get_template_directory_uri().'/js/app.js', array('jquery','eds-plugins'));
-
-    wp_enqueue_script('eds-plugins');
-    wp_enqueue_script('eds -app');
-
-    wp_register_script('ie-support-html5','js/ie-support/html5.js');
-    wp_register_script('ie-support-respond', 'js/ie-support/respond.js');
-
-    wp_enqueue_script('ie-support-html5');
-    wp_enqueue_script('ie-support-respond');
-
-    wp_script_add_data('ie-support-html5', 'conditional', 'it IE 9');
-    wp_script_add_data('ie-support-respond', 'conditional', 'it IE 9');
-   */
-
-
+    
 }
 
 // ici on change le titre du projet dans la barre des adresses  url
