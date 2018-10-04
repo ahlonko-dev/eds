@@ -33,7 +33,7 @@
                             <?php the_sub_field('extrait'); ?>
                         </p>
                         <p>
-                            <a class="inscription-button" href="<?php the_sub_field('link') ?>">Détails</a>
+                            <a class="inscription-button" target="_blank" href="<?php the_sub_field('link') ?>">Détails</a>
                         </p>
                                                 
                 </div>
