@@ -1,8 +1,6 @@
 <?php
 //activer init pour le réglagage des header er footer
-@ini_set( 'upload_max_size' , '64M' );
-@ini_set( 'post_max_size', '64M');
-@ini_set( 'max_execution_time', '300' );
+
 add_action('init','on_eds_init');
 
 function on_eds_init()
@@ -73,12 +71,12 @@ function eds_styles_scripts()
     wp_register_style("eds-jqueryui","http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css");
     wp_enqueue_style('eds-jqueryui');
 
-    wp_register_style('eds-style', get_template_directory_uri() . '/style.css',array(),"1.3");
+    wp_register_style('eds-style', get_template_directory_uri() . '/style.css',array(),"1.4");
     wp_enqueue_style('eds-style');
 
 
 
-    wp_register_script('mobile', get_template_directory_uri().'/js/mobile.js', array('jquery',"jquery-ui-core","jquery-ui-accordion","jquery-ui-button"), "1.3");
+    wp_register_script('mobile', get_template_directory_uri().'/js/mobile.js', array('jquery',"jquery-ui-core","jquery-ui-accordion","jquery-ui-button"), "1.4");
     wp_enqueue_script('mobile');
 
 

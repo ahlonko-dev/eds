@@ -1,13 +1,24 @@
 body{
-    background: url(./images/background.JPG) no-repeat center fixed;
     font-size:15px;
-    background-size:100%,cover;
-    width: 100%;
-    height:100vh;
+    height:100%;
     margin: 0;
     padding: 0;
-      
-    
+}
+body::before{
+    content:"";
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: url(./images/background.JPG) no-repeat center center;
+    background-attachment: fixed;
+    -webkit-background-size:100% 100% ;
+    --moz-size:100% 100% ;
+    -ms-background-size:100% 100% ;
+    -o-background-size:100% 100% ;
+    background-size:100% 100% ;
+    z-index: -1;
 }
 @font-face {
     font-family: miso-bold;
@@ -26,25 +37,30 @@ body{
 .left{
       padding: 0;
 }
+
+.eventImage{
+    width:100%;
+    height:100%;
+}
+
+.container .description-image .eventImage img{
+    width:100%;
+    height:100%;
+}
 .main-menu{
-    display: flex;
-    justify-content: flex-end;
-     background-color:white;
-     margin:0;
-     padding-right: 10rem;
-     position: fixed;
-     width: 100%;
-     z-index:9999;
-      
-     
+    background-color: white;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    text-align: right;
 }
 .main-menu ul{
     list-style: none;
-    padding:1rem;
+    padding: 0;
     margin: 0;
-   
-   
-
+    margin-right: 8rem;
+    text-align: right;
 }
 .main-menu li{
    display: inline-block; 
@@ -54,11 +70,12 @@ body{
     color:#F02A2A;
     font-size: 1.4rem;
     text-decoration: none;
+    display: block;
+    padding: 1.2rem;
 }
 .main-menu a:hover, .main-menu .current-menu-item a{
     background-color: #F02A2A;
     color: #FFFFFF;
-    padding: 1.2rem;
 }
 
 
@@ -69,7 +86,7 @@ body{
 .container-fluid{
      background-color:#F02A2A;
     color: #ffffff;
-   padding:0;
+   padding: 1.5rem 0;
 }
 .container-fluid .navigator{
     
@@ -99,13 +116,10 @@ body{
     margin-left:0.5rem;
 }
 .container-fluid img{
-    height:12rem;
-    padding-left: 6rem;
-    padding: 0;
-    padding-top:1rem;
-    margin-left: 5rem;
-    margin-right: -4rem;
-    margin-top: 3.3rem;   
+    height:auto;
+    width:8rem;
+    
+       
 }
 .container-fluid .pouvoir{
     color: #FFF121;
@@ -117,7 +131,7 @@ body{
     color: #F02A2A;
 }
 .flex{
-    display: flex;
+    text-align: left;
 }
 .flex .savoir{
 
@@ -125,8 +139,14 @@ body{
     font-size:3.2rem;
     padding-bottom:0;
     padding-top: 3.8rem;
-    margin-left:  5rem;
+    float: left;
+    text-align: left;
     line-height: 3rem;
+}
+
+.slogan{
+    display: inline-block;
+    margin-top: 2rem;
 }
 .intro{
     background-color: #EBEBEB;
@@ -176,22 +196,30 @@ footer .sirius {
     width: 4.5rem;
     margin: 0 4rem;
     float: right;
-}/*CSS DU CONTENUE ACCUEIL*/
+}/*CSS DU CONTENU ACCUEIL*/
 .container{
     margin-top: 5rem;
 }
+
+.container .event-container{
+    margin: 4rem 0;
+    margin-bottom:8rem;
+}
 .container .event{
     background-color:rgba(255, 255, 255, 0.75);
-    height: 23.5rem;
 }
 .container .tittle{
         padding: 1rem;
+        font-family: miso-bold;
+}
+.container .description-image{
+    height:100%;
+          
 }
 .container .description-image img{
-    height: auto;
-    width:  31rem;
-    margin-top:-2rem;
-margin-left:-2rem;       
+    height:100%;
+    width: 100%;
+          
 }
 .container p{
     text-align: justify;  
@@ -200,14 +228,7 @@ margin-left:-2rem;
     font-size: 1.1rem;
 }
 
-.description-image {
-    width: 23rem;
-    height: 30rem;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    margin-top: 2rem;
-    padding-left: 2rem;
-}
+
 .container .inscription-button{
     display: inline-block;
     text-align: center;
@@ -294,9 +315,16 @@ form .submit:hover{
     cursor: pointer;
 }
 .contact-map{
-    padding-bottom: 10rem;
+    display: block;
+    width: 100%;
+    margin-bottom: 7.8rem;
     text-align: center;
-    padding-left: 19rem;
+}
+.contact-map iframe{
+    display: inline-block;
+    width: 80%;
+    height: 27rem;
+    margin: 0 auto;
 }
 .ui-state-active{
     background-color:#F02A2A;
@@ -323,16 +351,34 @@ form .submit:hover{
 }
 /* FIN CSS DU CONTENU FAQ*/
 
-/*VERSION MOBILE*/
-@media only screen and (max-width:770px){
-    body{
+@media only screen and (max-width: 1120px) {
+    .container-fluid{
+      padding-top: 6.5rem;
+   }
 
-    font-size:15px;
-    overflow-x:hidden;
-    background: url(../IMAGE/9061673.png)no-repeat center top fixed;
-    background-size:50rem 50rem,cover;
-    width: 100%;
-    height:100%;
+/*VERSION MOBILE*/
+@media only screen and (max-width:768px){
+    .left {
+        display: inline;
+    }
+    .container-fluid {
+        padding-top: 2rem;
+    }
+  .mobile-icon{
+      font-size: 2rem;
+      display: inline-block;
+      color: black;
+      position: fixed;
+      padding:1rem;
+      cursor: pointer;
+      z-index:1000; 
+
+  }
+  .container-fluid .navigator .ecole-solidaire {
+       margin-top: 0;
+}
+  .ecole-solidaire {
+    padding-left: 0;
 }
     .main-menu{
      top: 10%;
@@ -343,25 +389,28 @@ form .submit:hover{
      background-color:#EBEBEB;
      
     }
+    .main-menu ul{
+        margin-right: 0;
+        text-align: left;
+    }
 
     .main-menu li{
         display:block;
         padding-left:0;
+        width: 100%;
     }
     .main-menu  a{
         color:#F02A2A;
         padding:  0.3rem;
         margin-right: 8rem;
         display: block;
+        width: 100%;
         text-decoration: none;
 
     }
     .main-menu a:hover{
-        
-        background-color:#FFF121;
         text-decoration: none;
         margin-right: 8rem;
-        padding-right: 17rem; 
 
     }
     .mobile-icon{
@@ -389,9 +438,12 @@ form .submit:hover{
         font-family:miso-regular;
     }
     .container-fluid img{
-        height: 9rem;
-        padding-left: 6rem;
+        width:2.8em;
 
+    }
+    .flex{
+        text-align: left;
+        padding-left: 1rem;
     }
    .flex .savoir{
 
@@ -399,14 +451,35 @@ form .submit:hover{
     font-size:2.2rem;
     padding-bottom:0;
     padding-top: 1rem;
-    margin-left:  5rem;
+    margin-left:  2rem;
     line-height: 2rem;
+}
+.slogan{
+    display: inline-block;
+    margin-top: 2rem;
+}
+.intro{
+    background-color: #EBEBEB;
+    padding-bottom: 1rem;
+}
+.intro h2{
+    padding: 4.5rem;
+    color: #F02A2A;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+    font-family: miso-bold;
+    text-transform: uppercase;
+}
+.intro p{
+    font-family: Verdana;
+    padding: 0px 4.5rem;
 }
     footer {
     width: 100%;
     text-align: left;
     background-color: #EBEBEB;
     line-height: 0rem;
+    position: inherit;
     
 }
     footer .sirius {
@@ -417,6 +490,41 @@ form .submit:hover{
         float: none;
         text-align: center;
     }
+    /*css CONTENU VERSION MOBILE ACCUEIL*/
+    .container{
+        margin-top: 5rem;
+    }
+    .container .tittle{
+            padding: 1rem;
+            font-family: miso-bold;
+    }
+    .container p{
+        text-align: justify;  
+        padding-left: 2rem;
+        padding-right: 2rem;
+        
+    }
+    .container .inscription-button{
+        display: inline-block;
+        text-align: center;
+        color:#FFFFFF;
+        background-color: rgb(172, 52, 52);
+        font-weight: 900;
+        padding: 0.5rem 0.7rem;
+        text-transform: uppercase;
+        -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+        -moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+        box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+    }
+
+    .contact-map{
+        margin-bottom: 2rem;
+    }
+    .contact-map iframe{
+        height: 22rem;
+    }
+    
+
 }
 
 

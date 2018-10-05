@@ -29,25 +29,26 @@
             <div class="container-fluid">
                 <div class="navigator">
                     <div class="row">
-                    <div class="col-lg-7 col-md-7 col-sm-6 ecole-solidaire">
+                    <div class="col-12 col-lg-7 col-md-7 col-sm-6 ecole-solidaire">
                         <P class="para1">L'ECOLE  DES  SOLIDARITÉS</p>  
                         <p class="para2"> SANS-PAPIERS MAIS PAS SANS DROITS!</p>
                     </div>
-                    <div class="col-lg-1 col-md-1 col-sm-2">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/Groupe-36.png" alt=""/>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-sm-4 flex">
+                    <div class="col-12 col-lg-5 col-md-5 col-sm-6 flex">
                         
                         <div class="savoir">
-                            <div>
+                            
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/Groupe-36.png" alt="" hspace="30" align="left" />
+                        <div class="slogan">
+                
                                 <p>SAVOIR</p>
-                            </div>
-                            <div>
+                            
+        
                                 <p>C'EST</p>
-                            </div>
-                            <div>
+                            
+                        
                                 <p class="pouvoir">POUVOIR !</p>
-                            </div>
+                            
+                         </div>
                         </div>
                     </div>
                 </div><!--end row entete-->

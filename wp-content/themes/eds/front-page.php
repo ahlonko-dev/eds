@@ -17,7 +17,7 @@
                 <?php 
                     while(have_rows("event")): the_row();
                     ?>
-            <div class="row">
+            <div class="row event-container">
                 <div class="col-lg-7 col-md-7 col-sm-6 event">
                     <h2 class="tittle"><?php the_sub_field('nom'); ?></h2>
                         <p> <img src="/eds/wp-content/themes/eds/images/Group-49.png" alt=""/>du<?php the_sub_field('date_start');?>am-
@@ -42,7 +42,10 @@
                     <?php 
                         $thumb_url = get_sub_field("image")["url"];
                         if($thumb_url):?>
-                            <img src="<?php echo $thumb_url;?>" alt="image"/>
+                            <div class="eventImage">
+                                <img src="<?php echo $thumb_url;?>" alt="image"/>
+                            </div>
+                            
                         <?php endif;?>
                         
                     </div>
