@@ -3,20 +3,16 @@
         <div class="row">
             <div class="col-12">
                 <div class="intro">
-                    <h2>savoir,c'est pouvoir!</h2>
-                        <p>L’asbl Promotion & Culture, le Monde des Possibles et le CEPAG vous invitent à leur nouveau cycle de formation mis en place par l’École des Solidarités. Cette formation est ouverte à toute personne touchée par les discriminations, l’exclusion, l’injustice sociale et les inégalités grandissantes.
-                        À travers la prise de parole, le partage de récits, l’échange d’expériences et l’intervention de référent(e)s, les participant(e)s mettront en commun leurs savoirs afin de rompre l’isolement dans lesquelles ils ou elles se trouvent et devenir acteur(trice)s de leur vie. Et ce, dans une perspective des combats à mener collectivement pour un monde respectueux de chacun(e)s.
-                        </p>
+                    <?php the_content();?>
+                   
                 </div>
             </div>
         </div>
 
         <div class="container">
-                
-            
-                <?php 
-                    while(have_rows("event")): the_row();
-                    ?>
+            <?php 
+                while(have_rows("event")): the_row();
+            ?>
             <div class="row event-container">
                 <div class="col-lg-7 col-md-7 col-sm-6 event">
                     <h2 class="tittle"><?php the_sub_field('nom'); ?></h2>

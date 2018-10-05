@@ -35,7 +35,7 @@ Template Name: FAQ
                                 ?>
                             </div>
 
-                            <button id="toggle">Toggle icons</button>
+                            <!--<button id="toggle">Afficher les numero</button>-->
                         </div> <!--Fin contenu Accordeon-->
 
                     </div><!-- FIn Contenu de la page commence ici-->
