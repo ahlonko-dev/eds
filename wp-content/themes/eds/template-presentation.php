@@ -8,7 +8,7 @@ Template Name: Presentation
 <div><!-- contenu de la page accueil-->
 
   <div class="container">
-            <h1>AVEC LE SOUTIEN DE LA FÉDÉRATION WALLONIE-BRUXELLES, EDUCATION PERMENTENTE-AXE1 </h1>
+            <h1>AVEC LE SOUTIEN DE LA FÉDÉRATION WALLONIE-BRUXELLES, EDUCATION <span class="nowrap">PERMANENTE-AXE1</span></h1>
 
             <p class="description">
                 <a href="#">

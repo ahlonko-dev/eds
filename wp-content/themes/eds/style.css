@@ -257,6 +257,10 @@ h1{
     text-align: center;
     color:white;
  }
+ .nowrap
+ {
+    white-space: nowrap;
+ }
 
 
 .description {

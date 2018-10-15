@@ -71,7 +71,7 @@ function eds_styles_scripts()
     wp_register_style("eds-jqueryui","http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css");
     wp_enqueue_style('eds-jqueryui');
 
-    wp_register_style('eds-style', get_template_directory_uri() . '/style.css',array(),"1.4");
+    wp_register_style('eds-style', get_template_directory_uri() . '/style.css',array(),"1.5");
     wp_enqueue_style('eds-style');
 
 
