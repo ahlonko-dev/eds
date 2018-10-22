@@ -4,8 +4,10 @@ jQuery(document).ready(function($){
         header: "ui-icon-circle-arrow-e",
         activeHeader: "ui-icon-circle-arrow-s"
     };
-    $("#accordion").accordion({
-        icons: icons, heightStyle: "content" 
+    $("#accordion").accordion({ 
+        icons: icons, active: false,
+        collapsible: true  ,
+        heightStyle: "content" 
 
     });
     $("#toggle").button().on("click", function () {
